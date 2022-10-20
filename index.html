@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter app</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="root" class="bg-light" style="width: 100vw; height: 100vh">
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand light-paragraph">Navbar</a>
+          <form class="d-flex" role="search">
+            <button
+              class="btn btn-outline-primary"
+              type="button"
+              id="change-theme-btn"
+            >
+              Change Theme
+            </button>
+          </form>
+        </div>
+      </nav>
+
+      <div class="container">
+        <p class="light-paragraph">Counter: <span id="counter"></span></p>
+        <div>
+          <button
+            class="btn btn-outline-danger"
+            type="button"
+            id="increment-btn"
+          >
+            Increment
+          </button>
+          <button
+            class="btn btn-outline-warning"
+            type="button"
+            id="decrement-btn"
+          >
+            Decrement
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
